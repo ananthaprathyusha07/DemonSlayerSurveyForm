@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+      <meta charset="utf-8">
+      <title>Demon Slayer Character Survey</title>
+      <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+      <h1 id="title">Demon Slayer Character Survey</h1>
+      <p id="description">Which Demon Slayer Character Are You Most Like?</p>
+      <form id="survey-form">
+        <fieldset>
+          <label id="name-label">Enter Your Name:<input id="name" type="text" name="name" placeholder="Enter your full name" required/></label>
+          <label id="email-label">Enter Your Email:<input id="email" type="email" name="email" placeholder="name@gmail.com" required/></label>
+          <label id="number-label">Enter Your Age(years):<input id="number" type="number" name="age" min="18" max="40" placeholder="Current age" required</label>
+          </fieldset>
+          <fieldset>
+          <label> What Is Your Favourite Breathing style?</label>
+            <select id="dropdown" name="Breathing style">
+              <option value="Water">Water Breathing </option>
+              <option value="Thunder">Thunder Breathing</option>
+              <option value="Beast" required>Beast Breathing</option>
+              <option value="Insect">Insect Breathing</option>
+              <option value="Flame">Flame Breathing</option>
+              <option value="Wind">Wind Breathing</option>
+              <option value="Love">Love Breathing</option>
+            </select>
+        </fieldset>
+        <fieldset>
+          <legend>Which Character Best Matches Your Personality?</legend>
+          <label ><input id="Tanjiro" type="radio" name="personality" value="Tanjiro" class="inline" checked /> Calm and caring(like Tanjiro) </label>
+          <label ><input id="Zenitsu" type="radio" name="personality" value="Zenitsu" class="inline" > Anxious & Loyal(like Zenitsu) </label>
+          <label ><input id="Inosuke" type="radio" name="personality" value="Inosuke" class="inline"/> Wild & Brave(like Inosuke) </label>
+          <label ><input id="Zenitsu" type="radio" name="personality" value="Zenitsu" class="inline"> Sweet & Deadly(like Shinobu) </label>
+          <label ><input id="Rengoku" type="radio" name="personality" value="Rengoku" class="inline"/> Passionate & Honorable(like Rengoku) </label>
+          <label ><input id="Sanemi" type="radio" name="personality" value="Sanemi" class="inline" > Harsh & Fierce(like Sanemi) </label>
+          <label ><input id="Mitsuri" type="radio" name="personality" value="Mitsuri" class="inline"> Loving & Strong(like Mitsuri) </label>
+        </fieldset>
+        <fieldset>
+          <legend>Select Your Favorite Demon Slayer Characters</legend>
+          <label><input type="checkbox" name="favorites" value="Tanjiro" class="inline"/> Tanjiro</label>
+          <label><input type="checkbox" name="favorites" value="Zenitsu" class="inline" /> Zenitsu </label>
+          <label><input type="checkbox" name="favorites" value="TInosuke" class="inline"/> Inosuke</label>
+          <label><input type="checkbox" name="favorites" value="Zenitsu" class="inline"/> Zenitsu</label>
+          <label><input type="checkbox" name="favorites" value="Rengoku" class="inline"/> Rengoku</label>
+          <label><input type="checkbox" name="favorites" value="Sanemi" class="inline"/> Sanemi</label>
+          <label><input type="checkbox" name="favorites" value="Mitsuri" class="inline"/> Mitsuri</label>
+        </fieldset>
+        <filedset>
+        <label for="Final comments">Which character inspired you the most and why?
+          <textarea id="Final comments" name="Final comments" rows="3" cols="30" placeholder="I just like zenitsu.."></textarea>
+          </label>
+        </fieldset>
+        <input id="submit" type="submit" value="Submit" />
+      </form>  
+</html>
